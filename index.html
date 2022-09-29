@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical landing Page template</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+</head>
+<body class="h-screen font-worksens">
+    <!-- Mobile menu -->
+    <div class="mobile_menu xl:hidden flex fixed hidden  -top-[100px] left-0 h-screen w-full bg-black z-10 items-center transition-all">
+        <div class="exit_btn absolute bg-white w-10 h-10 block text-center top-10 right-10 leading-[40px] cursor-pointer rounded-[4px]">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="container mx-auto items-center">
+            <div class="mobile_menu">
+                <ul class="">
+                    <li class="block text-center mb-3"><a href="index.html" class="inline-block text-[20px] text-white font-medium transition hover:text-lightBlue active:text-lightBlue pl-0">Find a Doctor</a></li>
+                    <li class="block text-center mb-3"><a href="index.html" class="inline-block text-[20px] text-white font-medium transition hover:text-lightBlue active:text-lightBlue pl-0">News</a></li>
+                    <li class="block text-center mb-3"><a href="index.html" class="inline-block text-[20px] text-white font-medium transition hover:text-lightBlue active:text-lightBlue pl-0">Services</a></li>
+                    <li class="block text-center mb-3"><a href="index.html" class="inline-block text-[20px] text-white font-medium transition hover:text-lightBlue active:text-lightBlue pl-0">Contact Us</a></li>
+                    <li class="block text-center"><a class="inline-block capitalize font-medium bg-lightBlue rounded-md text-white px-[30px] py-[14px] transition-all hover:bg-white hover:text-black" href="#">Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation area start -->
+    <div class="navigation_area py-[30px] absolute z-[2] top-0 left-0 w-[100%]">
+        <nav class="container mx-auto items-center justify-between flex space-x-[30px] px-4">
+            <div class="logo" data-aos="fade-down" data-aos-delay="400">
+                <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="menu_area hidden xl:block" data-aos="fade-down" data-aos-delay="300">
+                <ul class="pb-[20px] border-b-[.5px] border-b-lightGray">
+                    <li class="inline-block"><a href="index.html" class="inline-block text-[20px] text-black font-medium px-[25px] transition hover:text-lightBlue active:text-lightBlue pl-0">Find a Doctor</a></li>
+                    <li class="inline-block"><a href="#" class="inline-block text-[20px] text-black font-medium px-[25px] transition hover:text-lightBlue">News</a></li>
+                    <li class="inline-block"><a href="#" class="inline-block text-[20px] text-black font-medium px-[25px] transition hover:text-lightBlue">Services</a></li>
+                    <li class="inline-block"><a href="#" class="inline-block text-[20px] text-black font-medium px-[25px] transition hover:text-lightBlue pr-0">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="sign_up_area" data-aos="fade-down" data-aos-delay="200">
+                <ul class="hidden xl:block">
+                    <li class="inline-block"><a class="inline-block capitalize font-medium bg-lightBlue rounded-md text-white px-[30px] py-[14px] transition-all hover:bg-black" href="#">Sign up</a></li>
+                </ul>
+                <button class="navbar-toggler navbar_toggler false block xl:hidden">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!-- Navigation area end -->
+
+
+    <!-- Hero area start -->
+    <div class="hero_area xl:pt-[170px] xl:pb-[130px] md:pt-[170px] md:pb-[100px] pt-[150px] pb-[70px]">
+        <div class="container mx-auto align-middle  items-center xl:flex md:flex sm:block flex-row px-4 gap-[30px]">
+
+            <div class="hero_right  xl:w-2/5 md:w-1/2 sm:w-[100%] sm:mb-[30px] xl:order-2 md:order-1" data-aos="fade-down" data-aos-delay="300">
+                <div class="img xl:mr-[-168px] md:mr-[-50px] mr-[0px] text-center xl:text-left md:text-left sm:text-left">
+                    <img src="assets/img/heroarea/thumbnail.png" alt="thumbnail">
+                </div>
+            </div>
+
+            <div class="hero_left  xl:w-3/5 md:w-1/2 sm:w-[100%] xl:order-1 md:order-2 text-center xl:text-left  md:text-left  sm:text-left mt-7 xl:mt-0 md:mt-0 sm:mt-0" data-aos="fade-down" data-aos-delay="200">
+                <div class="small_heading mb-[35px]">
+                    <h3 class="relative align-middle pl-[35px] text-[20px] font-medium text-[#000000] "> <img class="absolute left-0 top-[50%] translate-y-[-50%]" src="assets/img/heroarea/smallheading.png" alt=""> Health Comes First</h3>
+                </div>
+                <div class="big_heading relative">
+                    <h1 class="xl:text-[70px] font-bold leading-[1.2] md:text-[55px]">Protect your health<br/> and take care of<br/> your health</h1>
+                    <img src="assets/img/heroarea/hero-ecg.png" class="absolute top-[70%] xl:right-[26%] hidden xl:block"  alt="hero"> 
+                </div>
+                <div class="small_desc mt-[45px] relative">
+                    <p class="font-medium text-[#3D3C3C] text-[18px] leading-8">Mentic is a growing community working towards changing the way<br/>
+                        individuals think & act about problems related to Mental Health.<br/>
+                        Managed by the current generation.</p>
+                       
+                </div>
+                <div class="site_btn mt-[35px]">
+                    <a href="#" class="inline-block xl:py-[27px] xl:px-[28px] md:py-[14px] md:px-[18px] py-[14px] px-[18px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px]  border-[1px] hover:bg-black  transition">Make Appoinment</a>
+                    <a href="#" class="inline-block xl:py-[27px] xl:px-[28px] md:py-[14px] md:px-[18px] py-[14px] px-[18px] bg-transparent rounded-md border-[1px] border-[#F64141]  font-medium text-[18px] text-[#000000] hover:bg-black hover:border-[#000] hover:text-white transition">Make Appoinment <img class="inline-block ml-[10px]" src="assets/img/heroarea/btn bg.png" alt="Btn bg"></a>                   
+
+                </div>
+            </div>
+            
+        </div>
+    </div>    
+    <!-- Hero area end -->
+    <!-- Featyre area start -->
+    <div class="feature_area">
+        <div class="container mx-auto px-4">
+            <div class="container_inner_area bg-[#F2F4F9] xl:grid xl:grid-cols-3 md:grid md:grid-cols-3 sm:grid  sm:grid-cols-2 grid  grid-cols-1   xl:py-[40px] xl:px-[85px]  py-[20px] px-[15px] sm:gap-8 xl:gap-8 md:gap-8 gap-0 rounded-[10px]">
+                
+                <div class="xl:flex md:block sm:block block  items-center xl:mb-0 md:mb-0 mb-8 xl:border-[0px] md:border-[0px] sm:border-[0px] py-4 px-4 border-[2px] border-[#ddd] py-4 px-4 rounded-[4px]" data-aos="fade-down" data-aos-delay="200">
+                    <div class="w-[90px] h-[90px] icon py-[22px] px-[27px] bg-[#00A9DC] rounded-[6px] mr-[20px] transition-all hover:bg-black xl:mb-[0px] md:mb-[0px] mb-[10px] leading-[48px]"> 
+                        <img  class="inline-block" src="assets/img/featured/1.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3 class="text-[25px] xl:text-[30px] md:text-[30px] font-semibold text-[#00A9DC] mb-[5px] xl:mb-[10px] md:mb-[10px]">80+</h3>
+                            <h4 class="font-medium text-[18px] xl:text-[20px] md:text-[20px]  text-[#000000] leading-8">Health Provider<br/>Shortage Areas</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="xl:flex md:block sm:block block  items-center xl:mb-0 md:mb-0 mb-8 xl:border-[0px] md:border-[0px] sm:border-[0px] py-4 px-4 border-[2px] border-[#ddd] py-4 px-4 rounded-[4px]" data-aos="fade-down" data-aos-delay="300">
+                    <div class="w-[90px] h-[90px] icon py-[22px] px-[27px] bg-[#FDC526] rounded-[6px] mr-[20px] transition-all hover:bg-black xl:mb-[0px] md:mb-[0px] mb-[10px] leading-[48px]"> 
+                        <img  class="inline-block" src="assets/img/featured/2.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3 class="text-[25px] xl:text-[30px] md:text-[30px] font-semibold text-[#00A9DC] mb-[5px] xl:mb-[10px] md:mb-[10px]">15,432</h3>
+                            <h4 class="font-medium text-[18px] xl:text-[20px] md:text-[20px]  text-[#000000] leading-8">State Health <br/> Administrators</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="xl:flex md:block sm:block block  items-center xl:mb-0 md:mb-0 mb-0 xl:border-[0px] md:border-[0px] sm:border-[0px] py-4 px-4 border-[2px] border-[#ddd] py-4 px-4 rounded-[4px]" data-aos="fade-down" data-aos-delay="400">
+                    <div class="w-[90px] h-[90px] icon py-[22px] px-[27px] bg-[#FF765A] rounded-[6px] mr-[20px] transition-all hover:bg-black xl:mb-[0px] md:mb-[0px] mb-[10px] leading-[48px]"> 
+                        <img  class="inline-block" src="assets/img/featured/3.svg" alt="icon">
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h3 class="text-[25px] xl:text-[30px] md:text-[30px] font-semibold text-[#00A9DC] mb-[5px] xl:mb-[10px] md:mb-[10px]">$26mln</h3>
+                            <h4 class="font-medium text-[18px] xl:text-[20px] md:text-[20px]  text-[#000000] leading-8">Annual MDHHS <br/> Budget</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Featyre area end -->
+    <!-- about box area start -->
+    <div class="about_box_area pt-[70px] relative z-[1]  ">
+        <img class="about_before absolute top-[96px] left-0" src="assets/img/about/before.png" alt="before shape"> 
+        <div class="container mx-auto px-4 md:grid md:grid-cols-2 gap-[30px] items-center">
+            <div class="about_left_side_content xl:pr-[125px] xl:-ml-[130px]  md:pr-0 md:ml-0 mb-10 xl:mb-0 md:mb-0" data-aos="fade-down" data-aos-delay="200">
+                <img src="assets/img/about/about1.png" alt="About thumbnail">
+            </div>
+            <div class="about_right_side_content" data-aos="fade-down" data-aos-delay="100">
+                <div class="title">
+                    <h2 class="xl:text-[50px] md:text-[35px] font-semibold leading-[1.3] mb-[20px]">
+                        We care for you, we <br/> write for you
+                    </h2>
+                </div>
+                <div class="desc mb-8">
+                    <p class="m-0">Mentic is a growing community working towards changing the way<br/>
+                        individuals think & act about problems related to Mental Health.<br/>
+                        Managed by the current generation.</p>
+                </div>
+                <div class="feadback_area xl:flex xl:justify-start relative xl:space-x-[50px] md:space-x-[20px]">
+                    <div class="feddback_items relative pb-[32px]">
+                        <h4 class="md:mb-[18px] mb-[0px] text-[20px] text-[#000000] font-medium">Positive Feedback</h4>
+                        <h3 class="font-semibold text-[#000000] text-[30px]">95%</h3>
+                        <div class="after_area absolute w-[177px] h-[14px] bg-[#006DFF] rounded-[6px]"></div>
+                    </div>
+                    <div class="feddback_items relative pb-[32px]">
+                        <h4 class="md:mb-[18px] mb-[0px] text-[20px] text-[#000000] font-medium">Experience Doctor’s</h4>
+                        <h3 class="font-semibold text-[#000000] text-[30px]">2,000+</h3>
+                        <div class="after_area absolute w-[177px] h-[14px] bg-[#FEB011] rounded-[6px]"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about box area end -->
+
+    <!-- about box area start -->
+    <div class="about_box_area pt-[40px] relative z-[1]">
+        <img class="about_after absolute top-[85px] right-0" src="assets/img/about/after.png" alt="before shape">
+        <div class="container mx-auto md:grid md:grid-cols-2 md:gap-[30px] items-center px-4">
+            <div class="about_left_side_content xl:pl-[125px] xl:-mr-[130px] md:pl-[50px] md:-mr-[0px] pl-[0px] md:mb-0 mb-10 order-2">
+                <img src="assets/img/about/about2.png" alt="About thumbnail">
+            </div>
+            <div class="about_right_side_content order-1">
+                <div class="title">
+                    <h2 class="xl:text-[50px] md:text-[35px] font-semibold leading-[1.3] mb-[20px]">
+                        We always provide<br/> best service
+                    </h2>
+                    
+                </div>
+                <div class="desc mb-8">
+                    <p class="m-0">Mentic is a growing community working towards changing the way<br/>
+                        individuals think & act about problems related to Mental Health.<br/>
+                        Managed by the current generation.</p>
+                </div> 
+                <div class="site_btn mt-[35px]">
+                     
+                    <a href="#" class="inline-block xl:py-[27px] xl:px-[28px] md:py-[14px] md:px-[18px] py-[14px] px-[18px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px]  border-[1px] hover:bg-black  transition">Read More info</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about box area end -->
+
+    <!-- Why people choose us start -->
+    <div class="why_people_choosed_us xl::pt-[150px] md:pt-[100px] pt-[80px] xl:pb-[0px] md:pb-[0px] pb-[80px] relative ">
+        <img src="assets/img/why/shape.png" alt="why shsape" class="absolute top-[49%] left-0 xl:flex  xl:visible  hidden">
+       <div class="container mx-auto md:grid md:grid-cols-3 gap-[30px] items-center px-4">
+            <div class="why_item_1">
+                <div class="single_why_item mb-10 md:border-0 border-[1px] border-[#ddd] md:p-0 p-10">
+                    <div class="icon w-[50px] h-[50px] py-[12px] px-[11px] bg-[#FEB011] rounded-[6px] mb-[15px]">
+                        <img src="assets/img/why/1.svg" alt="item1">
+                    </div>
+                    <h3 class="xl:text-[25px] md:text-[20px]  text-[18px] font-semibold text-black mb-[15px]">Always online service</h3>
+                    <div class="desc">
+                        <p class="text-black leading-[1.6] text-[15px]">Better high-touch, digital model for maternity<br/>and improve digital engagement.</p>
+                    </div>
+                </div>
+                <div class="single_why_item mb-10 md:border-0 border-[1px] border-[#ddd] md:p-0 p-10">
+                    <div class="icon w-[50px] h-[50px] py-[12px] px-[11px] bg-[#66BBFF] rounded-[6px] mb-[15px]">
+                        <img src="assets/img/why/2.svg" alt="item1">
+                    </div>
+                    <h3 class="xl:text-[25px] md:text-[20px] text-[25px] font-semibold text-black mb-[15px]">Easy make appointment</h3>
+                    <div class="desc">
+                        <p class="text-black leading-[1.6] text-[15px]">Better high-touch, digital model for maternity<br/>and improve digital engagement.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why_item_1">
+                <div class="single_why_item mb-10 md:border-0 border-[1px] border-[#ddd] md:p-0 p-10">
+                    <div class="icon w-[50px] h-[50px] py-[12px] px-[11px] bg-[#006DFF] rounded-[6px] mb-[15px]">
+                        <img src="assets/img/why/3.svg" alt="item1">
+                    </div>
+                    <h3 class="xl:text-[25px] md:text-[20px] text-[25px] font-semibold text-black mb-[15px]">Instant medicine</h3>
+                    <div class="desc">
+                        <p class="text-black leading-[1.6] text-[15px]">Better high-touch, digital model for<br/> maternity and improve digital.</p>
+                    </div>
+                </div>
+                <div class="single_why_item mb-10 md:border-0 border-[1px] border-[#ddd] md:p-0 p-10">
+                    <div class="icon w-[50px] h-[50px] py-[12px] px-[11px] bg-[#FF765A] rounded-[6px] mb-[15px]">
+                        <img src="assets/img/why/4.svg" alt="item1">
+                    </div>
+                    <h3 class="xl:text-[25px] md:text-[20px] text-[25px] font-semibold text-black mb-[15px]">Always Doctor</h3>
+                    <div class="desc">
+                        <p class="text-black leading-[1.6] text-[15px]">Better high-touch, digital model for<br/> maternity and improve digital.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why_item_3">
+                <h3 class="xl:text-[50px] md:text-[35px] text-[30px] leading-[1.3] font-semibold mb-5">Why People<br/> 
+                    choose us</h3>
+                <div class="desc">
+                    <p class="font-medium text-[18px] text-black">Freemium advisor buzz rockstar graphical user interface client iPhone . Infrastructure
+                        customer assets pitch research.</p>
+                </div>
+            </div>
+       </div> 
+    </div>
+    <!-- Why people choose us end -->
+
+    <!-- Cta area start -->
+    <div class="cta_area bg-[#006DFF] xl:mt-[145px] md:mt-[145px] mt-[0px] xl:pt-0 md:pt-0 pt-[80px] xl:pb-[0px] md:pb-[0px] pb-[80px] relative z-[1]">
+        <div class="container mx-auto md:grid md:grid-cols-2 gap-[30px] px-4 items-center">            
+            <div class="cta_image xl:-mt-[110px] xl:pr-[140px] xl:mb-[0px] md:mb-[0px] mb-[40px]">
+                <img  src="assets/img/cta/ctathumbnail.png" alt="Cta area">
+            </div>
+            <div class="cta_content">
+                <h1 class="xl:text-[48px] md:text-[35px] text-[35px] leading-[1.3] font-semibold text-white mb-5">Free online consulations<br/>
+                    starting at $75/month</h1>
+                <div class="desc mb-10">
+                    <p class="text-white m-0 font-medium">Better high-touch, digital model for maternity and
+                        improve <br/>
+                        digital engagement. fertility care is designed to
+                        complement <br/>
+                        your services.</p>
+                </div>
+                <div class="site_btn">                    
+
+                    <a href="#" class="iinline-block xl:py-[22px] xl:px-[40px] md:py-[14px] md:px-[18px] py-[14px] px-[18px] bg-[#fff] rounded-md text-[#151D34] font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition hover:text-white hover:border-black">Make Appoinment</a>
+                   
+                </div>
+            </div>
+
+        </div>
+        <img src="assets/img/cta/left.png" alt="shape" class="xl:flex xl:visible mb:visible hidden left absolute left-0 bottom-0 z-[-1]">
+        <img src="assets/img/cta/right.png" alt="shape" class="xl:flex xl:visible mb:visible hidden right absolute top-0 right-0 z-[-1]">
+    </div>
+    <!-- Cta area end -->
+
+    <!-- Doctor team start -->
+    <div class="doctor_team_area xl:pt-[130px] md:pt-[130px] pt-[80px] xl:pb-[30px] md:pb-[30px] pb-[80px] relative z-[1]">
+        <img src="assets/img/doctor/shape.png" alt="Shape" class="position_shape absolute top-[30%] right-0 xl:flex xl:visible hidden">
+        <div class="container mx-auto px-4">
+            <div class="title_area text-center mb-[50px]">
+                <h2 class="mb-[20px] font-semibold xl:text-[50px] md:text-[45px] text-[35px] leading-[1.3] text-black">Our specialist doctor team</h2>
+                <div class="desc">
+                    <p class="m-0 font-medium">Better high-touch, digital model for maternity and
+                        improve digital engagement. fertility care<br/> 
+                        is designed to
+                        complement your services.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto">
+            <div class="slider_area">
+                <div class="slider_inner_area">                   
+
+                    <div class="grid_item_1 custom_shadow pt-5 pr-5 pl-5 pb-6 bg-white">
+                        <div class="img relative z-[1] rounded-[6px]">
+                            <img src="assets/img/team/1.png" alt="Team" class="rounded-[6px] w-[100%]">
+                            <div class="meta inline-block absolute bg-white py-[14px] px-[24px] bottom-0 left-0">
+                                <h5 class="font-medium text-[18px]">Infertility</h5>
+                            </div>
+                        </div>                    
+                        <div class="content mt-5">
+                            <h3 class="text-[25px] font-semibold text-[#3D3C3C] mb-[10px]">Dr. Mohamdo Binda</h3>
+                            <div class="hospital_name flex justify-between">
+                                <div class="title"><h6 class="m-0 font-medium text-[#3D3C3C] text-[18px]">Squre Hospital Ltd.</h6> </div>
+                                <div class="title">
+                                    <p class="m-0 text-[#3D3C3C] font-medium text-[16px]"><i class="fa-solid fa-star text-[#FF4711] mr-[10px] text-[15px]"></i> 5.5k</p>
+                                </div>
+                            </div>
+                            <div class="desc mt-[15px] mb-[30px]">
+                                <p class="text-[14px] text-[#2B2B2B] leading-[1.66]">Mentic is a growing community working towards<br/> 
+                                    changing the way
+                                    individuals think...</p>
+                            </div>
+                            <div class="site_btn mt-[35px]">
+                                <a href="#" class="inline-block py-[11px] px-[19px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition">View Profile</a>
+                            </div>
+                        </div>  
+                    </div> 
+                     
+                    <div class="grid_item_1 custom_shadow pt-5 pr-5 pl-5 pb-6 bg-white">
+                        <div class="img relative z-[1] rounded-[6px]">
+                            <img src="assets/img/team/2.png" alt="Team" class="rounded-[6px] w-[100%]">
+                            <div class="meta inline-block absolute bg-white py-[14px] px-[24px] bottom-0 left-0">
+                                <h5 class="font-medium text-[18px]">Orthopaedic</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="content mt-5">
+                            <h3 class="text-[25px] font-semibold text-[#3D3C3C] mb-[10px]">Dr. Indra Kandi</h3>
+                            <div class="hospital_name flex justify-between">
+                                <div class="title"><h6 class="m-0 font-medium text-[#3D3C3C] text-[18px]">Buran Hospital Ltd.</h6> </div>
+                                <div class="title">
+                                    <p class="m-0 text-[#3D3C3C] font-medium text-[16px]"><i class="fa-solid fa-star text-[#FF4711] mr-[10px] text-[15px]"></i> 5.5k</p>
+                                </div>
+                            </div>
+                            <div class="desc mt-[15px] mb-[30px]">
+                                <p class="text-[14px] text-[#2B2B2B] leading-[1.66]">Mentic is a growing community working towards<br/> 
+                                    changing the way
+                                    individuals think...</p>
+                            </div>
+                            <div class="site_btn mt-[35px]">
+                                <a href="#" class="inline-block py-[11px] px-[19px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition">View Profile</a>
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="grid_item_1 custom_shadow pt-5 pr-5 pl-5 pb-6 bg-white">
+                        <div class="img relative z-[1] rounded-[6px]">
+                            <img src="assets/img/team/3.png" alt="Team" class="rounded-[6px] w-[100%]">
+                            <div class="meta inline-block absolute bg-white py-[14px] px-[24px] bottom-0 left-0">
+                                <h5 class="font-medium text-[18px]">Nephrology</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="content mt-5">
+                            <h3 class="text-[25px] font-semibold text-[#3D3C3C] mb-[10px]">Dr. Amanda Katrina</h3>
+                            <div class="hospital_name flex justify-between">
+                                <div class="title"><h6 class="m-0 font-medium text-[#3D3C3C] text-[18px]">Nelson Hospital Ltd.</h6></div>
+                                <div class="title">
+                                    <p class="m-0 text-[#3D3C3C] font-medium text-[16px]"><i class="fa-solid fa-star text-[#FF4711] mr-[10px] text-[15px]"></i> 5.5k</p>
+                                </div>
+                            </div>
+                            <div class="desc mt-[15px] mb-[30px]">
+                                <p class="text-[14px] text-[#2B2B2B] leading-[1.66]">Mentic is a growing community working towards<br/> 
+                                    changing the way
+                                    individuals think...</p>
+                            </div>
+                            <div class="site_btn mt-[35px]">
+                                <a href="#" class="inline-block py-[11px] px-[19px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition">View Profile</a>
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="grid_item_1 custom_shadow pt-5 pr-5 pl-5 pb-6 bg-white">
+                        <div class="img relative z-[1] rounded-[6px]">
+                            <img src="assets/img/team/2.png" alt="Team" class="rounded-[6px] w-[100%]">
+                            <div class="meta inline-block absolute bg-white py-[14px] px-[24px] bottom-0 left-0">
+                                <h5 class="font-medium text-[18px]">Infertility</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="content mt-5">
+                            <h3 class="text-[25px] font-semibold text-[#3D3C3C] mb-[10px]">Dr. Mohamdo Binda</h3>
+                            <div class="hospital_name flex justify-between">
+                                <div class="title"><h6 class="m-0 font-medium text-[#3D3C3C] text-[18px]">Squre Hospital Ltd.</h6> </div>
+                                <div class="title">
+                                    <p class="m-0 text-[#3D3C3C] font-medium text-[16px]"><i class="fa-solid fa-star text-[#FF4711] mr-[10px] text-[15px]"></i> 5.5k</p>
+                                </div>
+                            </div>
+                            <div class="desc mt-[15px] mb-[30px]">
+                                <p class="text-[14px] text-[#2B2B2B] leading-[1.66]">Mentic is a growing community working towards<br/> 
+                                    changing the way
+                                    individuals think...</p>
+                            </div>
+                            <div class="site_btn mt-[35px]">
+                                <a href="#" class="inline-block py-[11px] px-[19px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition">View Profile</a>
+                            </div>
+                        </div>  
+                    </div> 
+                    <div class="grid_item_1 custom_shadow pt-5 pr-5 pl-5 pb-6 bg-white">
+                        <div class="img relative z-[1] rounded-[6px]">
+                            <img src="assets/img/team/3.png" alt="Team" class="rounded-[6px] w-[100%]">
+                            <div class="meta inline-block absolute bg-white py-[14px] px-[24px] bottom-0 left-0">
+                                <h5 class="font-medium text-[18px]">Nephrology</h5>
+                            </div>
+                        </div>
+                    
+                        <div class="content mt-5">
+                            <h3 class="text-[25px] font-semibold text-[#3D3C3C] mb-[10px]">Dr. Amanda Katrina</h3>
+                            <div class="hospital_name flex justify-between">
+                                <div class="title"><h6 class="m-0 font-medium text-[#3D3C3C] text-[18px]">Nelson Hospital Ltd.</h6> </div>
+                                <div class="title">
+                                    <p class="m-0 text-[#3D3C3C] font-medium text-[16px]"><i class="fa-solid fa-star text-[#FF4711] mr-[10px] text-[15px]"></i> 5.5k</p>
+                                </div>
+                            </div>
+                            <div class="desc mt-[15px] mb-[30px]">
+                                <p class="text-[14px] text-[#2B2B2B] leading-[1.66]">Mentic is a growing community working towards<br/> 
+                                    changing the way
+                                    individuals think...</p>
+                            </div>
+                            <div class="site_btn mt-[35px]">
+                                <a href="#" class="inline-block py-[11px] px-[19px] bg-lightBlue rounded-md text-white font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition">View Profile</a>
+                            </div>
+                        </div>  
+                    </div>                      
+                </div>
+            </div>
+
+        </div>
+
+        
+    </div>
+    <!-- Doctor team end -->
+
+
+
+    <!-- patient area start -->
+    <div class="patient_area xl:pb-[177px] md:pb-[177px] pb-[80px] relative z-[1]">
+        <img src="assets/img/testimonial/testimonial_shape.png" alt="client shape" class="patient_area_img_shape absolute top-[0%] left-0 xl:flex xl:visible hidden">
+        <div class="container mx-auto px-4">
+            <div class="patient_slider_area_wrapper_list">
+
+                <div class="patient_slider_area_wrapper">
+                    <div class="slider_inner_areas  xl:flex md:flex block justify-between gap-[30px] items-end">
+                        <div class="right_content md:order-2 xl:w-1/3 md:w-1/3 xl:text-right md:text-right text-center xl:mx-0 md:mx-0 mx-auto xl:mb-0 md:md-0 mb-10">
+                            <img src="assets/img/testimonial/1.png" alt="ctathumbnail">
+                        </div>                    
+                        <div class="left_content md:order-1 xl:w-2/3 md:w-2/3">
+                            <h3 class="xl:text-[50px] md:text-[50px]text-[30px] leading-[1.3] text-[#000000] mb-[40px]">Our special patients say</h3>
+                            <div class="desc">
+                                <img src="assets/img/testimonial/qoute.png" alt="qoute">
+                                <p class="text-[20px] font-medium text-black leading-[1.8]">Mentic is a growing community working towards changing the way <br/>
+                                    individuals think & act about problems related to Mental Health.<br/>
+                                    Managed by the current generation.</p>
+                            </div>
+                            <div class="meta_area flex items-center mt-[30px]">
+                                <div class="img xl:mr-[35px] md:mr-[35px] mr-[10px]">
+                                    <img src="assets/img/testimonial/clientimg.png" alt="img">
+                                </div>
+                                <div class="content">
+                                    <h5 class="font-medium text-[#3D3C3C] mb-[5px] ">Minal Shen</h5>
+                                    <p class="text-[14px] text-[#3D3C3C] mb-[5px]">Photographer</p>
+                                    <ul>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="patient_slider_area_wrapper">
+                    <div class="slider_inner_areas  xl:flex md:flex block justify-between gap-[30px] items-end">
+                        <div class="right_content md:order-2 xl:w-1/3 md:w-1/3 xl:text-right md:text-right text-center xl:mx-0 md:mx-0 mx-auto xl:mb-0 md:md-0 mb-10">
+                            <img src="assets/img/testimonial/1.png" alt="ctathumbnail">
+                        </div>                    
+                        <div class="left_content md:order-1 xl:w-2/3 md:w-2/3">
+                            <h3 class="xl:text-[50px] md:text-[50px]text-[30px] leading-[1.3] text-[#000000] mb-[40px]">Our special patients say</h3>
+                            <div class="desc">
+                                <img src="assets/img/testimonial/qoute.png" alt="qoute">
+                                <p class="text-[20px] font-medium text-black leading-[1.8]">Mentic is a growing community working towards changing the way <br/>
+                                    individuals think & act about problems related to Mental Health.<br/>
+                                    Managed by the current generation.</p>
+                            </div>
+                            <div class="meta_area flex items-center mt-[30px]">
+                                <div class="img xl:mr-[35px] md:mr-[35px] mr-[10px]">
+                                    <img src="assets/img/testimonial/clientimg.png" alt="img">
+                                </div>
+                                <div class="content">
+                                    <h5 class="font-medium text-[#3D3C3C] mb-[5px] ">Minal Shen</h5>
+                                    <p class="text-[14px] text-[#3D3C3C] mb-[5px]">Photographer</p>
+                                    <ul>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                        <li class="inline-block text-[#FF4711] text-[12px] mr-[4px]"> <i class="fa-solid fa-star"></i> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+                
+            </div>
+            
+
+        </div>
+    </div>
+    <!-- patient area end -->
+
+    <!-- footer cta area start -->
+    <div class="footer_cta_ara xl:-mb-[85px] md:-mb-[85px] mb-[80px] relative z-[1]">
+        <div class="container mx-auto px-4">
+            <div class="footer_cta_inner_content text-center bg-[#006DFF] xl:py-[60px] md:py-[60px] py-[20px] xl:px-[100px] md:px-[100px] px-[20px]">
+                <h3 class="xl:text-[50px] md:text-[40px] text-[35px] font-medium leading-[1.3] mb-[10px] text-white" >It’s time to change your life today</h3>
+                <div class="desc mb-[34px]">
+                    <p class="font-medium text-white">Better high-touch, digital model for maternity and
+                        improve digital engagement. fertility care<br/>
+                        is designed to
+                        complement your services.</p>
+                </div>
+                <div class="site_btn mt-[35px]">
+                    <a href="#" class="inline-block xl:py-[22px] xl:px-[55px] md:py-[14px] md:px-[40px] py-[14px] px-[18px] bg-white rounded-md text-black font-medium text-[18px] mr-[30px] border-[1px] hover:bg-black  transition hover:text-white hover:border-black">Contact Us</a>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer cta area end -->
+
+    <!-- footer area start -->
+    <footer class="footer_area bg-[#1A233C] relative">
+        <!-- fotoer widget area -->
+        <div class="fotoer_widget_area xl:pt-[145px] md:pt-[145px] pt-[80px]">
+            <div class="container xl:flex md:flex xl:justify-between md:justify-between mx-auto px-4 gap[30px]">
+
+                <div class="footer_info xl:w-1/4  md:w-1/2 xl:mb-0 md:mb-0 mb-10">
+                    <a href="#"><img src="assets/img/footer/logo.png" alt="logo" class="xl:w-auto md:w-[100px] w-auto"></a>
+                    <div class="desc mt-[20px]">
+                        <p class="font-medium text-[15px] leading-[1.6] text-white">Better high-touch, digital model<br/>
+                            for maternity and
+                            improve digital<br/>
+                            engagement.</p>
+                    </div>
+                </div>
+                <div class="navigation_link xl:w-1/6 md:w-1/2 xl:pl-[30px] xl:mb-0 md:mb-0 mb-10">
+                    <h3 class="widget_title font-semibold text-[#F2F2F2] text-[20px] mb-[30px]">Support</h3>
+                    <ul>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Tearms</a></li>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Careers</a></li>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Blog</a></li>
+                        <li class="block"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Security</a></li>
+                    </ul>
+                </div>
+                <div class="navigation_link xl:w-1/6 md:w-1/2 xl:pl-[30px] xl:mb-0 md:mb-0 mb-10">
+                    <h3 class="widget_title font-semibold text-[#F2F2F2] text-[20px] mb-[30px]">Support</h3>
+                    <ul>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Tearms</a></li>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Careers</a></li>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Blog</a></li>
+                        <li class="block"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Security</a></li>
+                    </ul>
+                </div>
+                <div class="navigation_link xl:w-1/5 md:w-1/2 xl:pl-[30px] xl:mb-0 md:mb-0 mb-10">
+                    <h3 class="widget_title font-semibold text-[#F2F2F2] text-[20px] mb-[30px]">Security</h3>
+                    <ul>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Privacy Policy</a></li>
+                        <li class="block mb-[20px]"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Terms & Conditions</a></li> 
+                        <li class="block"><a href="#" class="block text-[16px] font-medium text-[#F2F2F2]">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="navigation_link xl:w-1/5 md:w-1/2 xl:pl-[30px]">
+                    <h3 class="widget_title font-semibold text-[#F2F2F2] text-[20px] mb-[30px]">Get in touch</h3>
+
+                   <div class="form_area">
+                    <form action="#" class="relative">
+                        <input class="py-[12px] px-[12px] bg-[#006DFF] rounded-[4px] text-[18px] placeholder:text-[11px] text-[#fff] placeholder:text-[#fff] w-[100%]" type="text" placeholder="Enter your email" required>
+                        <button class="absolute right-[12px] top-[50%] translate-y-[-50%] cursor-pointer w-[20px] h-[20px text-white" type="submit"><i class="fa-solid fa-arrow-right-long text-[16px]"></i></button>
+                    </form>
+                   </div>
+                   <div class="social_items mt-[42px]">
+                    <a href="#" class="w-[28px] h-[28px] inline-block mr-[15px] bg-[#F2F2F2] text-[#313131] text-[12px] text-center leading-[30px] rounded-[4px] hover:bg-[#006DFF] hover:text-white transition space-x-[25px]" ><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-[28px] h-[28px] inline-block mr-[15px] bg-[#F2F2F2] text-[#313131] text-[12px] text-center leading-[30px] rounded-[4px] hover:bg-[#006DFF] hover:text-white transition space-x-[25px]" ><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="w-[28px] h-[28px] inline-block mr-[15px] bg-[#F2F2F2] text-[#313131] text-[12px] text-center leading-[30px] rounded-[4px] hover:bg-[#006DFF] hover:text-white transition space-x-[25px]" ><i class="fa-brands fa-linkedin-in"></i></a>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright area start -->
+        <div class="copyright-area">
+            <div class="container mx-auto px-4">
+                <div class="copytext border-t-[0.6px] border-t-[#EDEDED] mt-[30px] pt-[20px] pb-[25px] text-center">
+                    <p class="m-0 text-[#F2F2F2] text-[14px]">Copyright 2022 ©greenlab  All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright area end -->
+    </footer>
+    
+
+    <!-- footer area end -->
+    <script src="assets/js/jquery-3.6.0-min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
